@@ -12,7 +12,7 @@
         <div class="navbar-left">Emmanuel Sierra</div>
         <div class="navbar-right">
             <a href="index.html">Git/GitHub</a>
-            <a href="programacion.html">Programación</a>
+            <a href="programacion.html">Python</a>
             <a href="#">Recursos</a>
         </div>
     </nav>
@@ -39,6 +39,57 @@
                 <li class="titulo-explica">Para desactivar ambiente:</li>
                     <ul class="git-interno">
                         <li>.venv\Scripts\deactivate.bat</li>
+                    </ul>
+            </ul>
+        </div>
+
+        <!-- Contenedor 2 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./assets/img/python.png" alt="Logo 2" class="logo">
+            </div>
+            <h2 class="subtitle">Instalar Paquetes Externos en Python</h2>
+            <hr>
+            <ul class="git-commands">
+                <li class="titulo-explica">Para instalar los paquetes externos en Python se utiliza el gestor de paquetes pip, primero verificamos que lo tenemos instalado:</li>
+                    <ul class="git-interno">
+                        <li>pip --version</li>
+                        <p>(Si nos sale un número de versión esta instalado, de lo contrario se tendrá que instalar)</p>
+                    </ul>
+                <li class="titulo-explica">Para instalar pip:</li>
+                    <ul class="git-interno">
+                        <li>python get-pip.py</li>
+                    </ul>
+                <li class="titulo-explica">Para instalar paquetes externos:</li>
+                    <ul class="git-interno">
+                        <li>pip install nombre_paquete</li>
+                    </ul>
+            </ul>
+        </div>        
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Contenedor 1 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./assets/img/python.png" alt="Logo 2" class="logo">
+            </div>
+            <h2 class="subtitle">Ver Paquetes Instalados en Entorno Python</h2>
+            <hr>
+            <ul class="git-commands">
+                <li class="titulo-explica">Para ver paquetes instalados:</li>
+                    <ul class="git-interno">
+                        <li>pip freeze</li>
+                        <p>(Saldrá una lista de los paquetes instalados)</p>
+                    </ul>
+                <li class="titulo-explica">Para respaldar estos paquetes:</li>
+                    <ul class="git-interno">
+                        <li>pip freeze > requirements.txt</li>
+                    </ul>
+                <li class="titulo-explica">Luego se pueden instalar en otro entorno:</li>
+                    <ul class="git-interno">
+                        <li>pip install -r requirements.txt</li>
                     </ul>
             </ul>
         </div>

@@ -99,6 +99,10 @@ body {
     margin-bottom: 5px;
 }
 
+.git-commands p {
+    color: rgba(59, 77, 10, 0.973);
+    font-size: 0.7rem;
+}
 /* Git Interno */
 .git-interno {
     padding-left: 20px;
