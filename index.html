@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Emmanuel Sierra</title>
+    <link rel="stylesheet" href="./assets/estilos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">Emmanuel Sierra</div>
+        <div class="navbar-right">
+            <a href="index.html">Inicio</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Recursos</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Contenedor 1 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./assets/img/git.png" alt="Logo 2" class="logo">
+            </div>
+            <h2 class="subtitle">Crear Repositorio Local en Git</h2>
+            <hr>
+            <ul class="git-commands">
+                <li class="titulo-explica">Si es la primera vez debe configurar:</li>
+                    <ul class="git-interno">
+                        <li>git config --global user.name "Tu Nombre"</li>
+                        <li>git config --global user.email "tucorreo@example.com"</li>
+                    </ul>
+                <li class="titulo-explica">Luego:</li>
+                <li>git init</li>
+                <li>git add .</li>
+                <li>git commit -m "Primer commit"</li>
+                <li class="titulo-explica">Verificar estatus de archivos pendientes:</li>
+                <li>git status</li>
+            </ul>
+        </div>
+
+        <!-- Contenedor 2 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./assets/img/github.png" alt="Logo 2" class="logo">
+            </div>
+            <h2 class="subtitle">Subir Repositorio Local a GitHub</h2>
+            <hr>
+            <ul class="git-commands">
+                <li class="titulo-explica">Después de haber hecho un Commit:</li>
+                <li>git status</li>
+                <li class="titulo-explica">Si no hay archivos pendientes:</li>
+                <li>git branch -M main</li>
+                <li>git remote add origin URL_DEL_REPOSITORIO</li>
+                <li>git push -u origin main</li>
+                <li class="titulo-explica">Para actualizar en GitHub, luego de un Commit local:</li>
+                <li>git push -u origin main</li>
+            </ul>
+        </div>        
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Contenedor 1 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./assets/img/github.png" alt="Logo 2" class="logo">
+            </div>
+            <h2 class="subtitle">Clonar un Repositorio Existente en GitHub</h2>
+            <hr>
+            <ul class="git-commands">
+                <li class="titulo-explica">Ve a GitHub, al repositorio deseado. Presiona el botón</li>
+                <li class="titulo-explica">verde <>Code, copia la dirección HTTPS, ubicate en la</li>
+                <li class="titulo-explica">carpeta local donde quieres colocar el repositorio.</li>
+                <li class="titulo-explica">Abre la consola / terminal y escribe:</li>
+                <li>git clone https://github.com/USER/REPOS.git</li>
+                <li></li>
+                <li class="titulo-explica">Nota: Recuerda que debes tener instalado Git para poder clonar un repositorio existente</li>
+            </ul>
+        </div>
+
+        <!-- Contenedor 2 -->
+        <div class="container">
+            
+        </div>        
+    </div>
+
+    <footer>
+        <p>Página WEB diseñada y elaborada por Emmanuel Sierra © Derechos reservados Noviembre 2024</p>
+    </footer>
+</body>
+</html>
