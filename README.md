@@ -9,7 +9,7 @@ Para clonar el repositorio:
 <ul>
     <li>Ubicate en la carpeta donde deseas colocar este repositorio</li>
     <li>Abre la consola / terminal en esta carpeta y escribe:</li>
-    <li>git clone https://github.com/esierr01/pagina_emmanuel_sierra.git</li>
+    <li>git clone https://github.com/esierr01/esierr01.github.io.git</li>
 </ul>
 <hr/>
 
