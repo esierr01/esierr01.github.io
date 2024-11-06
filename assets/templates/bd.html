@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Emmanuel Sierra</title>
+    <link rel="stylesheet" href="./../estilos.css">
+    <link rel="shortcut icon" href="./../img/develop.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">Emmanuel Sierra</div>
+        <div class="navbar-right">
+            <a href="./../../index.html">Inicio</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Tips</a>
+                <div class="dropdown-content">
+                    <a href="./git.html">Git/GitHub</a>
+                    <a href="./python.html">Python</a>
+                    <a href="#">PHP / Laravel</a>
+                    <a href="./bd.html">Base de Datos</a>
+                </div>
+            </div>
+            <a href="#">Recursos</a>
+            <a href="#">Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Contenedor 1 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./../img/mongodb.png" alt="Logo 2" class="logo">
+            </div>
+            <h2 class="subtitle">Instalar e Iniciar MongoDB</h2>
+            <hr>
+            <ul class="git-commands">
+                <li class="titulo-explica">Se descarga el instalador:</li>
+                <ul class="git-interno">
+                    <li>Se recomienda instalar la versión 5 que incluye el Shell</li>
+                    <p>(En la instalación seleccionar Completa y desmarcar opción de encender el motos de bd al iniciar Windows, ya que esto recargará la memoria si no se a utilizar constantemente)</p>
+                </ul>
+                <li class="titulo-explica">Luego de instalado, hay que hacer dos configuraciones:</li>
+                    <ul class="git-interno">
+                        <li>Incluir en el path el directorio ....\bin de MongoDB</li>
+                        <li>Crear un directorio en la raiz C:\data\db</li>
+                    </ul>
+                <li class="titulo-explica">Para verificar la instalación, ejecutar en consola:</li>
+                    <ul class="git-interno">
+                        <li>mongod --version</li>
+                        <p>(se deve mostrar la versión de MongoDB instalada)</p>
+                        <li>ejecutar mongod</li>
+                        <p>(Se iniciara el motor de base de datos de MongoDB y quedará en un bucle, No Cerrar, minimizar)</p>
+                    </ul>
+                <li class="titulo-explica">Para ejecutar el Shell:</li>
+                    <ul class="git-interno">
+                        <li>Abrir otra ventana del CMD y escribir el comando:</li>
+                        <li>mongo</li>
+                        <p>(Se abrirá el Shell donde puede introducir los comandos de MongoDB)</p>
+                    </ul>
+            </ul>
+        </div>
+
+        <!-- Contenedor 2 -->
+        <div class="container">
+            
+        </div>        
+    </div>
+
+    
+
+
+</body>
+</html>
