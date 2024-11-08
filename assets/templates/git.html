@@ -11,8 +11,8 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-left">
-            <img src="./../img/Logo.jpg" alt="" class="logo_app">
-            <span>Emmanuel Sierra</span>
+            <img src="./assets/img/Logo.jpg" alt="" class="logo_nav_bar">
+            <span class="nombre_web">Emmanuel Sierra</span>
         </div>
         <div class="navbar-right">
             <a href="./../../index.html">Inicio</a>
@@ -29,6 +29,45 @@
             <a href="#">Portfolio</a>
         </div>
     </nav>
+
+    <div class="separador"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Contenedor 1 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./../img/git.png" alt="Logo Git" class="logo">
+            </div>
+            <h2 class="subtitle">Instalar Control de Versiones Git</h2>
+            <hr>
+            <ul class="comandos">
+                <li class="explica">Descarga instalador de Git (https://git-scm.com/downloads/win)</li>
+                  
+            </ul>
+        </div>  
+        <!-- Contenedor 2 -->
+        <div class="container">
+            <div class="logos">
+                <img src="./../img/git.png" alt="Logo Git" class="logo">
+            </div>
+            <h2 class="subtitle">Crear Repositorio Local en Git</h2>
+            <hr>
+            <ul class="git-commands">
+                <li class="explica">Si es la primera vez debe configurar:</li>
+                <ul class="git-interno">
+                    <li>git config --global user.name "Tu Nombre"</li>
+                    <li>git config --global user.email "tucorreo@example.com"</li>
+                </ul>
+                <li class="titulo-explica">Luego:</li>
+                <li>git init</li>
+                <li>git add .</li>
+                <li>git commit -m "Primer commit"</li>
+                <li class="titulo-explica">Verificar estatus de archivos pendientes:</li>
+                <li>git status</li>
+            </ul>
+        </div>      
+    </div>
 
     <!-- Main Content -->
     <div class="main-content">
@@ -106,6 +145,8 @@
             </ul>
         </div>        
     </div>
+
+
 
     <script src="./assets/main.js"></script>
 </body>

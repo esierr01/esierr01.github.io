@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 /* Reset */
+
+/* Declaración de variables */
 :root {
-    --background-color: #3D63DD;
-    --navbar-color: #172448;
+    --background-color: #020f25;
+    --navbar-color: #0c2042;
     --font-color: #D5E2FF;
     --logo-color: #27bd4d;
     --hover-color: #2c7741;
     --menunav-color: #000;
     --fondonav-color: #1b3b52;
-    --backmess-color: #6ca4c7ac;
+    --backmess-color: #1e4157ac;
+    --explica-color: #d5e40e9f;
 }
+
+/* Reinicio de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* Configuración del Body */
 body {
     font-family: "Fira Code", monospace;
     display: flex;
@@ -30,44 +35,45 @@ body {
     width: 100%;
     background: var(--navbar-color);
     display: flex;
+    position: fixed;
     justify-content: space-between;
-    padding: 15px;
+    padding: 5px;
     align-items: center;
 }
-
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
 .navbar-left span{
     font-size: 2.6rem;
     font-weight: bold;
     color: var(--logo-color);   
 }
-
+.navbar-right {
+    margin-right: 1rem;
+}
 .navbar-right a {
     color: var(--font-color);
     font-size: 1.1rem;
     text-decoration: none;
     margin-left: 0.8rem;
 }
-
 .navbar-right a:hover {
     text-decoration: underline;
     font-size: 1.1rem;
     color: var(--hover-color);
     font-weight: bold;
 }
-
-/* Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropbtn {
     color: var(--font-color);
     font-size: 1.1rem;
     text-decoration: none;
     cursor: pointer;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -79,7 +85,6 @@ body {
     border-radius: 15px;
     z-index: 1;
 }
-
 .dropdown-content a {
     color: var(--font-color);
     padding: 10px 10px;
@@ -87,24 +92,24 @@ body {
     display: block;
     font-size: 1rem;
 }
-
 .dropdown-content a:hover {
     background-color: var(--hover-color);
     color: var(--menunav-color);
-
     border-radius: 15px;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     font-weight: bold;
     color: var(--font-color);
 }
 
-/* Main Content */
+.separador {
+    margin-top: 5rem;
+}
+
+/* Bloque por línea - Main */
 .main-content {
     display: flex;
     gap: 20px;
@@ -112,8 +117,6 @@ body {
     width: 90%;
     margin-top: 20px;
 }
-
-/* Containers */
 .container {
     background-color: var(--backmess-color);
     padding: 20px;
@@ -121,98 +124,53 @@ body {
     flex: 1;
 }
 
-/* Logos and Subtitle */
+.logo_nav_bar {
+    margin-left: 0.5rem;
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+.nombre_web {
+    margin-left: 1rem;
+}
+.titulo_ppal {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--font-color);
+    margin-bottom: 2rem;
+}
+.wallpaper_bienvenida {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.img_wallpaper {
+    width: 550px;
+    height: auto;
+}
 .logos {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin-bottom: 10px;
 }
-.logos-herramientas {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 25px;
-}
-
 .logo {
     width: 50px;
     height: auto;
+    margin-bottom: 1rem;
 }
-.logo-tool {
-    width: 150px;
-    height: auto;
-}
-.logo_app {
-    width: 50px;
-    height: auto;
-}
-.logobienvenida {
-    width: 550px;
-    height: auto;
-}
-.logorecursos {
-    width: 80px;
-    height: auto;
-}
-
 .subtitle {
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
+    color: var(--font-color);
     margin-bottom: 10px;
 }
-.subtitleppal {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+.comandos {
+    padding: 10px;
 }
-
-/* Git Commands */
-.git-commands {
-    margin-top: 10px;
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-.git-commands .titulo-explica {
-    font-size: 0.9rem;
-    color: rgb(15, 15, 92);
-    font-weight: bold;
-}
-
-.git-commands li {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-.git-commands p {
-    color: rgba(59, 77, 10, 0.973);
-    font-size: 0.7rem;
-}
-/* Git Interno */
-.git-interno {
-    padding-left: 20px;
-}
-
-.git-interno li {
+.explica {
+    color: var(--explica-color);
     font-size: 0.8rem;
-    margin-bottom: 5px;
 }
-
-footer {
-    background: rgba(15, 32, 39, 0.3);
-
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-}
-
-footer p {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: rgb(193, 213, 231);
-}
-
