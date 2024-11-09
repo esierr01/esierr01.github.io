@@ -40,31 +40,21 @@
                 <img src="./../img/mongodb.png" alt="Logo 2" class="logo">
             </div>
             <h2 class="subtitle">Instalar e Iniciar MongoDB</h2>
-            <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Se descarga el instalador:</li>
-                <ul class="git-interno">
-                    <li>Se recomienda instalar la versión 5 que incluye el Shell</li>
-                    <p>(En la instalación seleccionar Completa y desmarcar opción de encender el motos de bd al iniciar Windows, ya que esto recargará la memoria si no se a utilizar constantemente)</p>
-                </ul>
-                <li class="titulo-explica">Luego de instalado, hay que hacer dos configuraciones:</li>
-                    <ul class="git-interno">
-                        <li>Incluir en el path el directorio ....\bin de MongoDB</li>
-                        <li>Crear un directorio en la raiz C:\data\db</li>
-                    </ul>
-                <li class="titulo-explica">Para verificar la instalación, ejecutar en consola:</li>
-                    <ul class="git-interno">
-                        <li>mongod --version</li>
-                        <p>(se deve mostrar la versión de MongoDB instalada)</p>
-                        <li>ejecutar mongod</li>
-                        <p>(Se iniciara el motor de base de datos de MongoDB y quedará en un bucle, No Cerrar, minimizar)</p>
-                    </ul>
-                <li class="titulo-explica">Para ejecutar el Shell:</li>
-                    <ul class="git-interno">
-                        <li>Abrir otra ventana del CMD y escribir el comando:</li>
-                        <li>mongo</li>
-                        <p>(Se abrirá el Shell donde puede introducir los comandos de MongoDB)</p>
-                    </ul>
+            <hr class="margen">
+                <li class="explica">Se descarga el instalador:</li>
+                <li class="explica">Se recomienda instalar la versión 5 que incluye el Shell</li>
+                <li class="explica">En la instalación seleccionar Completa y desmarcar opción de encender el motor de bd al iniciar Windows, ya que esto recargará la memoria si no se a utilizar constantemente)</li>
+                <li class="explica">Luego de instalado, hay que hacer dos configuraciones:</li>
+                <li class="explica">Incluir en el path el directorio ....\bin de MongoDB</li>
+                <li class="explica">Crear un directorio en la raiz C:\data\db</li>
+                <li class="explica">Para verificar la instalación, ejecutar en consola, deberá aparecer la versión de MongoDB:</li>
+                <li class="consolacmd">mongod --version</li>
+                <li class="explica">Ejecutar en consola y se iniciara el motor de bases de datos MongoDB</li>
+                <li class="consolacmd">mongod</li>
+                <li class="explica">El motor de MongoDB se quedará ejecutando en un bucle, no cerrar y minimizar</li>
+                <li class="explica">Ahora para ejecutar el Shell de comandos de MongoDB, se abrirá una consola CMD y se ejecutará:</li>
+                <li class="consolacmd">mongo</li>
+                <li class="explica">Se abrirá el Shell donde puede introducir los comandos de MongoDB</li>
             </ul>
         </div>
 

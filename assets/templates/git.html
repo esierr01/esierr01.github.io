@@ -42,8 +42,14 @@
             <h2 class="subtitle">Instalar Control de Versiones Git</h2>
             <hr>
             <ul class="comandos">
-                <li class="explica">Descarga instalador de Git (https://git-scm.com/downloads/win)</li>
-                  
+                <li class="explica">En Windows 10, descarga instalador de Git (https://git-scm.com/downloads/win), luego haz click en archivo descargado para iniciar la instalación, hacer click en <span class="boton">Next</span> en cada paso, dejar la ubicación por defecto y los componentes a instalar.</li>
+                <li class="explica">Después de instalado, verifica la misma, abriendo la consola CMD o Git Bash y ejecuta:</li>
+                <li class="consolacmd">git --version</li>
+                <li class="explica">Deberá salir un mensaje mostrando la versión de Git, ahora se debe configuar el nombre del usuario y el Correo del Usuario</li>   
+                <ul class="consolacmd">
+                    <li>git config --global user.name "Tu Nombre"</li>
+                    <li>git config --global user.email "tucorreo@example.com"</li>
+                </ul>               
             </ul>
         </div>  
         <!-- Contenedor 2 -->
@@ -52,20 +58,15 @@
                 <img src="./../img/git.png" alt="Logo Git" class="logo">
             </div>
             <h2 class="subtitle">Crear Repositorio Local en Git</h2>
-            <hr>
-            <ul class="git-commands">
-                <li class="explica">Si es la primera vez debe configurar:</li>
-                <ul class="git-interno">
-                    <li>git config --global user.name "Tu Nombre"</li>
-                    <li>git config --global user.email "tucorreo@example.com"</li>
-                </ul>
-                <li class="titulo-explica">Luego:</li>
+            <hr class="margen">
+            <ul class="comandos consolacmd">
                 <li>git init</li>
+                <li>echo "Repositorio Local" > README.md</li>
                 <li>git add .</li>
                 <li>git commit -m "Primer commit"</li>
-                <li class="titulo-explica">Verificar estatus de archivos pendientes:</li>
                 <li>git status</li>
             </ul>
+            <li class="explica">git init (inicializa el repositorio local), echo "mensaje" > README.md (Crea un archivo README, informativo del repositorio), git add . (añade todo los archivos para incluirlos en el próximo commit), git commit -m "mensaje" (pasa los archivos en el repositorio), git status (muestra estatus del repositorio)</li>
         </div>      
     </div>
 
@@ -76,41 +77,31 @@
             <div class="logos">
                 <img src="./../img/git.png" alt="Logo Git" class="logo">
             </div>
-            <h2 class="subtitle">Crear Repositorio Local en Git</h2>
-            <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Si es la primera vez debe configurar:</li>
-                <ul class="git-interno">
-                    <li>git config --global user.name "Tu Nombre"</li>
-                    <li>git config --global user.email "tucorreo@example.com"</li>
-                </ul>
-                <li class="titulo-explica">Luego:</li>
-                <li>git init</li>
+            <h2 class="subtitle">Actualizar Repositorio Local en Git</h2>
+            <hr class="margen">
+            <li class="explica">Ya teniento el repositorio iniciado anteriormente</li>
+
+            <ul class="comandos consolacmd">
                 <li>git add .</li>
-                <li>git commit -m "Primer commit"</li>
-                <li class="titulo-explica">Verificar estatus de archivos pendientes:</li>
+                <li>git commit -m "Explicación de cambios"</li>
                 <li>git status</li>
             </ul>
-        </div>
-
+            <li class="explica">git init (inicializa el repositorio local), echo "mensaje" > README.md (Crea un archivo README, informativo del repositorio), git add . (añade todo los archivos para incluirlos en el próximo commit), git commit -m "mensaje" (pasa los archivos en el repositorio), git status (muestra estatus del repositorio)</li>
+        </div> 
         <!-- Contenedor 2 -->
         <div class="container">
             <div class="logos">
-                <img src="./../img/github.png" alt="Logo GitHub" class="logo">
+                <img src="./../img/git.png" alt="Logo Git" class="logo">
             </div>
-            <h2 class="subtitle">Subir Repositorio Local a GitHub</h2>
-            <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Después de haber hecho un Commit:</li>
-                <li>git status</li>
-                <li class="titulo-explica">Si no hay archivos pendientes:</li>
-                <li>git branch -M main</li>
-                <li>git remote add origin URL_DEL_REPOSITORIO</li>
-                <li>git push -u origin main</li>
-                <li class="titulo-explica">Para actualizar en GitHub, luego de un Commit local:</li>
-                <li>git push -u origin main</li>
+            <h2 class="subtitle">Comandos Git Adicionales</h2>
+            <hr class="margen">
+            <ul class="comandos">
+                <li class="explica">Ver todos los Commits realizados en Repositorio Local:</li>
+                <ul class="comandos consolacmd">
+                    <li>git log</li>
+                </ul>    
             </ul>
-        </div>        
+        </div>            
     </div>
 
     <!-- Main Content -->
@@ -120,30 +111,37 @@
             <div class="logos">
                 <img src="./../img/github.png" alt="Logo GitHub" class="logo">
             </div>
-            <h2 class="subtitle">Clonar un Repositorio Existente en GitHub</h2>
-            <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Ve a GitHub, al repositorio deseado. Presiona el botón verde &lt;&gt;Code, copia la dirección HTTPS, ubicate en la carpeta local donde quieres colocar el repositorio.</li>
-                <li class="titulo-explica">Abre la consola / terminal y escribe:</li>
-                <li>git clone https://github.com/USER/REPOS.git</li>
-                <li class="titulo-explica">Nota: Recuerda que debes tener instalado Git para poder clonar un repositorio existente.</li>
+            <h2 class="subtitle">Subir Repositorio Local a GitHub</h2>
+            <hr class="margen">
+            <ul class="comandos">
+                <li class="explica">Para subir un repositorio local a GitHub, primero debemos tener una cuenta en la WEB de Github.com y crear un repositorio alli.</li>
+                <li class="explica">Después de haber hecho un Commit en el repositorio local, verificamos primero que no haya algo pendiente:</li>
+                <li class="comandos consolacmd">git status</li>
+                <li class="explica">Si no hay archivos pendientes, podemos conectar el repositorio local con GitHub y subir por primera vez el repositorio:</li>
+                <ul class="comandos consolacmd">
+                    <li>git branch -M main</li>
+                    <li>git remote add origin URL_DEL_REPOSITORIO</li>
+                    <li>git push -u origin main</li>
+                </ul>
+                <li class="explica">Para actualizar en GitHub, luego de un Commit local:</li>
+                <li class="comandos consolacmd">git push -u origin main</li>
             </ul>
         </div>
-
         <!-- Contenedor 2 -->
         <div class="container">
             <div class="logos">
-                <img src="./../img/git.png" alt="Logo Git" class="logo">
+                <img src="./../img/github.png" alt="Logo GitHub" class="logo">
             </div>
-            <h2 class="subtitle">Otros Comandos Git</h2>
-            <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Ver Commits Hechos en Repositorio Local:</li>
-                <ul class="git-interno">
-                    <li>git log</li>
-                </ul>    
+            <h2 class="subtitle">Clonar un Repositorio Existente en GitHub</h2>
+            <hr class="margen">
+            <ul class="comandos">
+                <li class="explica">Ve a GitHub, al repositorio deseado. Presiona el botón <span class="boton">&lt;&gt;Code</span>, copia la dirección HTTPS, ubicate en la carpeta local donde quieres colocar el repositorio.</li>
+                <li class="explica">Abre la consola (CMD) y ejecuta:</li>
+                <li class="comandos consolacmd">git clone https://github.com/USER/REPOS.git</li>
+                <li class="explica">Nota: Recuerda que debes tener instalado Git para poder clonar un repositorio existente.</li>
             </ul>
-        </div>        
+        </div>
+           
     </div>
 
 

@@ -41,20 +41,14 @@
             </div>
             <h2 class="subtitle">Crear Ambiente Virtual en Python</h2>
             <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Para crear ambiente:</li>
-                    <ul class="git-interno">
-                        <li>python -m venv .venv</li>
-                    </ul>
-                <li class="titulo-explica">Para activar el ambiente creado:</li>
-                    <ul class="git-interno">
-                        <li>.venv\Scripts\activate (en CMD)</li>
-                        <li>.venv\Scripts\activate.ps1 (en PowerShell)</li>
-                    </ul>
-                <li class="titulo-explica">Para desactivar ambiente:</li>
-                    <ul class="git-interno">
-                        <li>.venv\Scripts\deactivate.bat</li>
-                    </ul>
+            <ul class="comandos">
+                <li class="explica">Para crear ambiente:</li>
+                <li class="consolacmd">python -m venv .venv</li>
+                <li class="explica">Para activar el ambiente creado:</li>
+                <li class="consolacmd">.venv\Scripts\activate (en CMD)</li>
+                <li class="consolacmd">.venv\Scripts\activate.ps1 (en PowerShell)</li>
+                <li class="explica">Para desactivar ambiente:</li>
+                <li class="consolacmd">.venv\Scripts\deactivate.bat</li>
             </ul>
         </div>
 
@@ -65,20 +59,14 @@
             </div>
             <h2 class="subtitle">Instalar Paquetes Externos en Python</h2>
             <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Para instalar los paquetes externos en Python se utiliza el gestor de paquetes pip, primero verificamos que lo tenemos instalado:</li>
-                    <ul class="git-interno">
-                        <li>pip --version</li>
-                        <p>(Si nos sale un número de versión esta instalado, de lo contrario se tendrá que instalar)</p>
-                    </ul>
-                <li class="titulo-explica">Para instalar pip:</li>
-                    <ul class="git-interno">
-                        <li>python get-pip.py</li>
-                    </ul>
-                <li class="titulo-explica">Para instalar paquetes externos:</li>
-                    <ul class="git-interno">
-                        <li>pip install nombre_paquete</li>
-                    </ul>
+            <ul class="comandos">
+                <li class="explica">Para instalar los paquetes externos en Python se utiliza el gestor de paquetes pip, primero verificamos que lo tenemos instalado:</li>
+                <li class="consolacmd">pip --version</li>
+                <li class="explica">(Si nos sale un número de versión esta instalado, de lo contrario se tendrá que instalar)</li>
+                <li class="explica">Para instalar pip:</li>
+                <li class="consolacmd">python get-pip.py</li>
+                <li class="explica">Para instalar paquetes externos:</li>
+                <li class="consolacmd">pip install nombre_paquete</li>
             </ul>
         </div>        
     </div>
@@ -92,20 +80,13 @@
             </div>
             <h2 class="subtitle">Ver Paquetes Instalados en Entorno Python</h2>
             <hr>
-            <ul class="git-commands">
-                <li class="titulo-explica">Para ver paquetes instalados:</li>
-                    <ul class="git-interno">
-                        <li>pip freeze</li>
-                        <p>(Saldrá una lista de los paquetes instalados)</p>
-                    </ul>
-                <li class="titulo-explica">Para respaldar estos paquetes:</li>
-                    <ul class="git-interno">
-                        <li>pip freeze > requirements.txt</li>
-                    </ul>
-                <li class="titulo-explica">Luego se pueden instalar en otro entorno:</li>
-                    <ul class="git-interno">
-                        <li>pip install -r requirements.txt</li>
-                    </ul>
+            <ul class="comandos">
+                <li class="explica">Para ver una lista de los paquetes instalados:</li>
+                <li class="consolacmd">pip freeze</li>
+                <li class="explica">Para respaldar toddos estos paquetes instalados en el entorno:</li>
+                <li class="consolacmd">pip freeze > requirements.txt</li>
+                <li class="explica">Luego se pueden instalar en otro entorno:</li>
+                <li class="consolacmd">pip install -r requirements.txt</li>
             </ul>
         </div>
 
